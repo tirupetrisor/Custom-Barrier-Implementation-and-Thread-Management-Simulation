@@ -9,12 +9,11 @@ The project is organized into the following files:
 To compile the project, run the following commands in the terminal:
 For the Jones Family Simulation: gcc -Wall -o jones_family_simulation main_jones_family.c jones_family.c my_barrier.c -lpthread
 For the Benchmark Program: gcc -Wall -o benchmark main_benchmark.c my_barrier.c -lpthread
-To execute the Jones Family Simulation, use the command: ./jones_family_simulation
 
+To execute the Jones Family Simulation, use the command: ./jones_family_simulation
 The program simulates the activities of the Jones family, and the results will be written to a file named results_jones_family.txt.
 
 To execute the Benchmark, use the command: ./benchmark
-
 The program compares the performance of my_barrier_t and pthread_barrier_t. Execution times for the two implementations will be displayed in the console.
 
 Benchmark data is saved in results_benchmark.xlsx, which contains execution times for various numbers of threads (NUMTHREADS) and repetition counts (REPEATS), calculated averages for each barrier implementation, and differences between the average times of the custom and pthread barriers.
